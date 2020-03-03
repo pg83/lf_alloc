@@ -99,6 +99,7 @@ static inline long AtomicSub(TAtomic& a, long b) {
 #if defined(_linux_)
 #include <linux/futex.h>
 #include <sys/syscall.h>
+#include <unistd.h>
 #if !defined(MADV_HUGEPAGE)
 #define MADV_HUGEPAGE 14
 #endif
