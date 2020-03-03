@@ -161,3 +161,7 @@ NMalloc::TMallocInfo NMalloc::MallocInfo() {
     return r;
 }
 #endif
+
+void NMalloc::AbortFromCorruptedAllocator(char const*) {
+    abort();
+}
